@@ -5,11 +5,19 @@
   ],
   "builds": [
     {
+      "src": "index.html",
+      "use": "@now/html-minifier"
+    },
+    {
       "src": "api/index.js",
       "use": "@now/node"
     }
   ],
   "routes": [
+    {
+      "src": "/?",
+      "dest": "index.html"
+    },
     {
       "src": "/.*",
       "dest": "/api/index.js"
