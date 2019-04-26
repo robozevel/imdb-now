@@ -1,0 +1,28 @@
+{
+  "name": "imdb-now",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "micro-dev ./api",
+    "deploy": "now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robozevel/imdb-now.git"
+  },
+  "author": "Guy Levi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robozevel/imdb-now/issues"
+  },
+  "homepage": "https://github.com/robozevel/imdb-now#readme",
+  "dependencies": {
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.1",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  }
+}

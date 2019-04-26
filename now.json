@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "alias": [
+    "imdb-suggest"
+  ],
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/api/index.js"
+    }
+  ]
+}
